@@ -1,9 +1,10 @@
-def factorial_iterative(n):
-    if n < 0:
-        raise ValueError("Factorial is not defined for negative numbers")
-result = 1
-for i in range(1, n + 1):
-    result *= i
-return result
+n = 6
 
-print(factorial_iterative(5))
+# Initialize the factorial variable to 1
+fact = 1
+
+# Calculate the factorial using a for loop
+for i in range(1, n + 1):
+    fact *= i
+
+print(fact)
